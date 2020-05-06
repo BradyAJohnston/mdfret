@@ -1,7 +1,7 @@
 \name{return_xyz}
 \alias{return_xyz}
 %- Also NEED an '\alias' for EACH other topic documented here.
-\title{
+\title{"Gets xyz for specified atoms"
 %%  ~~function to do ... ~~
 }
 \description{
@@ -53,9 +53,9 @@ return_xyz(some_pdb, some_residue, some_frame)
 ##--	or do  help(data=index)  for the standard data sets.
 
 ## The function is currently defined as
-function (some_pdb, some_residue, some_frame) 
+function (some_pdb, some_residue, some_frame)
 {
-    selec.xyz <- atom.select.pdb(some_pdb, string = "calpha", 
+    selec.xyz <- atom.select.pdb(some_pdb, string = "calpha",
         resno = some_residue)$xyz
     some_pdb$xyz[some_frame, selec.xyz]
   }
