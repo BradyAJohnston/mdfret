@@ -1,7 +1,7 @@
 Package: mdfret
 Type: Package
 Title: Processing and Plotting of MD Data
-Version: 0.1.1
+Version: 0.1.2
 Author: Brady A. Johnston
 Maintainer: Brady A. Johnston <brady.johnston@me.com>
 Description: For use with the bio3d package, this helps deal with pdb objects that contain multiple frames. Funtions allow for calculation of distances between residues, plotting summaries of COLVAR_ABMD files and calculation of theoretical FRET values from distnaces calculated.
@@ -11,3 +11,4 @@ Encoding: UTF-8
 LazyData: true
 Imports: ggplot2, patchwork, reshape2, bio3d
 Depends: R (>= 3.6.0)
+RoxygenNote: 7.1.0.9000
