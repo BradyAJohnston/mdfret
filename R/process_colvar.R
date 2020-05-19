@@ -16,12 +16,12 @@ process_colvar <- function(file, some_colnames = NULL, AAnum = 610){
   }else{
   if(length(rdf[1,]) == 6){
 
-  colnames(rdf) <- c("time", "RMSD1", "RMSD2", "alpha", "total.bias", "RMSD0_min")
+  colnames(rdf) <- c("time", "RMSD0", "RMSD1", "alpha", "total.bias", "RMSD0_min")
   rdf$alpha <- rdf$alpha / (AAnum-6)
 
   }else{
     if(length(rdf[1,] == 5)){
-      colnames(rdf) <- c("time", "RMSD1", "RMSD2", "total.bias", "RMSD0_min")
+      colnames(rdf) <- c("time", "RMSD0", "RMSD1", "total.bias", "RMSD0_min")
     }else{
       print("Please provide valid colnames that match those being read.")
     }
