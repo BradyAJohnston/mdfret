@@ -14,7 +14,7 @@
 
 dis_res <- function(pdb, r1, r2){
 
-  frames = dim(some_pdb$xyz)[1]
+  frames = dim(pdb$xyz)[1]
 
   output_df = data.frame(
     frame = 0,

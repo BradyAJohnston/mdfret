@@ -19,7 +19,5 @@ fretcalc <- function(df, R0){
 
   df$FRET <- 1 / (1 + (df$distance / R0)^6)
 
-  head(dis.df)
-
   return(df)
 }

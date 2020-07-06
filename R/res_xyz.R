@@ -12,6 +12,6 @@
 
 res_xyz <- function(pdb, res, atomtype = "calpha"){
 
-  xyz_index <- atom.select(inpdb, string = atomtype, resno = res)$xyz
-  return(inpdb$xyz[,xyz_index])
+  xyz_index <- atom.select(pdb, string = atomtype, resno = res)$xyz
+  return(pdb$xyz[,xyz_index])
 }
