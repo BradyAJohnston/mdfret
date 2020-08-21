@@ -15,5 +15,5 @@
 #'
 
 html_highlight <- function(t1, text, t3, colour="#FF4500"){
-  paste(t1, "<strong><span style='color:#", colour, "'>", text, "</span></strong>", t3, sep = "")
+  paste(t1, "<strong><span style='color:", colour, "'>", text, "</span></strong>", t3, sep = "")
 }
