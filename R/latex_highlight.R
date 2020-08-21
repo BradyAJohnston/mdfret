@@ -17,3 +17,5 @@
 latex_highlight <- function(t1, text, t3, colour="red"){
   paste("\\texttt{", t1, "\\textcolor{", colour, "}{", text, "}", t3, "}", sep = "")
 }
+
+
