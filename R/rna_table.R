@@ -1,9 +1,8 @@
 #' Data Table of Experimental RNA
 #'
-#' Data from a QTL experiment on gravitropism in
-#' Arabidopsis, with data on 162 recombinant inbred lines (Ler x
-#' Cvi). The outcome is the root tip angle (in degrees) at two-minute
-#' increments over eight hours.
+#' Sequences of RNA for MD and FRET experiments. Raw sequences are available, as well as some
+#' pre-formatted sequences for use in geom_richtext and kable for both html and LaTeX, that highlight
+#' the mismatches between these and the target RNA sequence.
 #'
 #' @docType data
 #'
