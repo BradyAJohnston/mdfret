@@ -5,19 +5,23 @@
 \alias{rna_table}
 \title{Data Table of Experimental RNA}
 \format{
-An object of class \code{"cross"}; see \code{\link[qtl]{read.cross}}.
-}
-\source{
-\href{https://phenome.jax.org/projects/Moore1b}{QTL Archive}
+A data frame with columns:
+\describe{
+ \item(name){Name given to the sequnce, BAJ_01-BAJ_13 and noRNA.}
+ \item(latex_name){Name that has escaped underscores "\_" for LaTeX formatting.}
+ \item(raw_seq){RNA sequence, 5ʹ to 3ʹ of each RNA.}
+ \item(html_seq){Sequences with mismatch to BAJ_01 highilgihted in RED using html flags. Compatible with geom_richtext for labelling.}
+ \item(mono_seq){Seqeunces with mismatches to BAJ_01 highlighed in RED and also a monospaced font, using html flags. Compatible with kable(html) for making tables.}
+ \item(latex_seq){Sequences with misatch to BAJ_01 highlighed in RED with LaTeX formatting and also a monospaced font. Compatible with kable(latex) for makint tables.}
+ }
 }
 \usage{
 data(rna_table)
 }
 \description{
-Data from a QTL experiment on gravitropism in
-Arabidopsis, with data on 162 recombinant inbred lines (Ler x
-Cvi). The outcome is the root tip angle (in degrees) at two-minute
-increments over eight hours.
+Sequences of RNA for MD and FRET experiments. Raw sequences are available, as well as some
+pre-formatted sequences for use in geom_richtext and kable for both html and LaTeX, that highlight
+the mismatches between these and the target RNA sequence.
 }
 \examples{
 data(grav)
@@ -26,7 +30,8 @@ phe <- grav$pheno
 \donttest{iplotCurves(phe, times)}
 }
 \references{
-Moore et al. (2013) Genetics 195:1077-1086
-(\href{https://www.ncbi.nlm.nih.gov/pubmed/23979570}{PubMed})
+Brady Johnston, unpublished work (as of Aug 2020)
 }
-\keyword{datasets}
+\keyword{datasets,}
+\keyword{rna,}
+\keyword{sequnce}

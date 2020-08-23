@@ -8,14 +8,19 @@
 #'
 #' @usage data(rna_table)
 #'
-#' @format An object of class \code{"cross"}; see \code{\link[qtl]{read.cross}}.
+#' @format A data frame with columns:
+#' \describe{
+#'  \item(name){Name given to the sequnce, BAJ_01-BAJ_13 and noRNA.}
+#'  \item(latex_name){Name that has escaped underscores "\_" for LaTeX formatting.}
+#'  \item(raw_seq){RNA sequence, 5ʹ to 3ʹ of each RNA.}
+#'  \item(html_seq){Sequences with mismatch to BAJ_01 highilgihted in RED using html flags. Compatible with geom_richtext for labelling.}
+#'  \item(mono_seq){Seqeunces with mismatches to BAJ_01 highlighed in RED and also a monospaced font, using html flags. Compatible with kable(html) for making tables.}
+#'  \item(latex_seq){Sequences with misatch to BAJ_01 highlighed in RED with LaTeX formatting and also a monospaced font. Compatible with kable(latex) for makint tables.}
+#'  }
 #'
-#' @keywords datasets
+#' @keywords datasets, rna, sequnce
 #'
-#' @references Moore et al. (2013) Genetics 195:1077-1086
-#' (\href{https://www.ncbi.nlm.nih.gov/pubmed/23979570}{PubMed})
-#'
-#' @source \href{https://phenome.jax.org/projects/Moore1b}{QTL Archive}
+#' @references Brady Johnston, unpublished work (as of Aug 2020)
 #'
 #' @examples
 #' data(grav)
