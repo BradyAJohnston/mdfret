@@ -30,7 +30,7 @@ sliding_comparison <- function(
 
   number_of_slides = max(bound_pdb$atom$resno) / segment_slide - 1
 
-  pb <- progress::progress_bar$new(number_of_slides)
+  pb <- progress::progress_bar$new(total = number_of_slides)
 
   for(i in 1:number_of_slides){
     pb$tick()
