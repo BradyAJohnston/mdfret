@@ -15,10 +15,10 @@
 
 
 dis_res <- function(frames,
-                             res1,
-                             res2,
-                             string = "calpha",
-                             ncore = 6) {
+                    res1,
+                    res2,
+                    string = "calpha",
+                    ncore = 6) {
   out_df <- data.frame(
     frame = 0,
     distance = dist.xyz(
