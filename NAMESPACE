@@ -2,6 +2,8 @@
 
 export(dis_res)
 export(fret)
+export(get_frames)
+export(get_slices)
 export(html_highlight)
 export(latex_highlight)
 export(mono_highlight)
