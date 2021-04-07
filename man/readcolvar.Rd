@@ -2,12 +2,13 @@
 % Please edit documentation in R/reading.R
 \name{readcolvar}
 \alias{readcolvar}
-\title{Read and Name COLVAR File
- @export}
+\title{Read and Name COLVAR File}
 \usage{
 readcolvar(file)
 }
+\arguments{
+\item{file}{File to read and name.}
+}
 \description{
 Read and Name COLVAR File
- @export
 }

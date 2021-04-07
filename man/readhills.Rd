@@ -2,12 +2,13 @@
 % Please edit documentation in R/reading.R
 \name{readhills}
 \alias{readhills}
-\title{Read and Name HILLS File
- @export}
+\title{Read and Name HILLS File}
 \usage{
 readhills(file)
 }
+\arguments{
+\item{file}{File to read and name.}
+}
 \description{
 Read and Name HILLS File
- @export
 }

@@ -2,12 +2,13 @@
 % Please edit documentation in R/reading.R
 \name{readfes}
 \alias{readfes}
-\title{Read and Name FES File
- @export}
+\title{Read and Name FES File}
 \usage{
 readfes(file)
 }
+\arguments{
+\item{file}{File to read and name.}
+}
 \description{
 Read and Name FES File
- @export
 }
