@@ -7,6 +7,7 @@
 \format{
 A data frame with columns:
 \describe{
+\item(rna){Numeric value given to RNA, (0 being no RNA)}
  \item(name){Name given to the sequnce, BAJ_01-BAJ_13 and noRNA.}
  \item(latex_name){Name that has escaped underscores "\_" for LaTeX formatting.}
  \item(raw_seq){RNA sequence, 5ʹ to 3ʹ of each RNA.}
