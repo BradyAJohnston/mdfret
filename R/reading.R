@@ -21,6 +21,6 @@ readhills <- function(file) {
 #' @export
 readfes <- function(file) {
   df <- read.table(file)
-  colanmes(df) <- c("sss.sss", "zzz.zzz", "ff1", "dff1_sss.sss", "dff1_zzz.zzz")
+  colnames(df) <- c("sss.sss", "zzz.zzz", "ff1", "dff1_sss.sss", "dff1_zzz.zzz")
   df
 }
